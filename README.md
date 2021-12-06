@@ -53,3 +53,7 @@ When you use `-i` option, this script does not generate or load `.fmt` file. If 
 Due to `\let\endofdump\relax`, `\endofdump` in `sample.tex` does not cause the `Undefined control sequence` error. The control sequence `\endofdump`, defined in `mylatexformat.ltx`, is a macro to stop caching.
 
 Other options, like `-ot`, `-od`, have the same functions as `ptex2pdf`.
+
+# Details
+
+For details, see my [blog post (Japanese)](https://doratex.hatenablog.jp/entry/20211206/1638749451).
