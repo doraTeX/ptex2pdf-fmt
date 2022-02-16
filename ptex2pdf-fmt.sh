@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Copyright (c) 2021 Yusuke Terada (doraTeX)
+# Copyright (c) 2021-2022 Yusuke Terada (doraTeX)
 # This file is distributed under the terms of the MIT license, see LICENSE.
 
 SCRIPTNAME=$(basename "$0")
-VERSION=0.1
+VERSION=0.2
 
 function usage() {
     echo "Usage: $SCRIPTNAME [options] basename[.tex]"
@@ -17,6 +17,7 @@ function usage() {
     echo "  -u            use upLaTeX instead of pLaTeX"
     echo "  -s            stop at dvi"
     echo "  -ot '<opts>'  extra options for (u)pLaTeX"
+    echo "  -recorder     add \"-recorder\" option to (u)pLaTeX"
     echo "  -od '<opts>'  extra options for dvipdfmx"
     echo "  -output-directory '<dir>'   directory for created files"
     echo

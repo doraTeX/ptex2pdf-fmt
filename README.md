@@ -2,7 +2,7 @@
 
 This is a Bash script for converting Japanese TeX files to PDF with (u)pLaTeX using mylatexformat.
 
-Its function and interface is similar to [`ptex2pdf`](https://github.com/texjporg/ptex2pdf), but this script makes use of [`mylatexformat`](https://ctan.org/pkg/mylatexformat?lang=en) for compilation.
+Its function and interface are similar to [`ptex2pdf`](https://github.com/texjporg/ptex2pdf), but this script makes use of [`mylatexformat`](https://ctan.org/pkg/mylatexformat?lang=en) for compilation.
 
 # Usage
 
@@ -17,6 +17,7 @@ options:
   -u            use upLaTeX instead of pLaTeX
   -s            stop at dvi
   -ot '<opts>'  extra options for (u)pLaTeX
+  -recorder     add "-recorder" option to (u)pLaTeX
   -od '<opts>'  extra options for dvipdfmx
   -output-directory '<dir>'   directory for created files
 ```
