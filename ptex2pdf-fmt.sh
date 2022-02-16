@@ -83,6 +83,9 @@ while [ $I -lt ${#args[@]} ]; do
         -i )
             IGNORE_FMT=true
             ;;
+        -recorder )
+            OPTIONS_FOR_TEX="$OPTIONS_FOR_TEX -recorder"
+            ;;
         -- | -)
             I=$(($I+1))
             while [ $I -lt ${#args[@]} ]; do
